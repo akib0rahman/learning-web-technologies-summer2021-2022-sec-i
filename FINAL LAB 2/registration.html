@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>REGISTRATION</title>
+    </head>
+    <body>
+            <script>
+                function validate()
+                    {
+                    let Id = document.getElementById('Id').value;
+                    let email = document.getElementById('email').value;
+                    let password = document.getElementById('password').value;
+
+                    if(Id != "" && email != "" && password != "")
+                    {
+                        return true;
+                    }
+                    else if(Id == "")
+                    {
+                        alert('NUll Id');
+                        return false;
+                    }
+                    else if(email == "")
+                    {
+                        alert('NUll Email');
+                        return false;
+                    }
+                    else if (password == "")
+                    {
+                        alert("NUll Password");
+                        return false;
+                    }
+                    }
+            </script>
+
+        <form onsubmit = "return validate()">
+
+            <fieldset>
+                <legend>
+                    Admin Registration
+                </legend>
+                
+            <table>
+                <tr>
+                    <td>
+                        User Id:
+                    </td>
+                    <td> 
+                        <input type = "text" id = "Id" name = "" value = "">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td> 
+                        <input type = "email" id = "email" name = "email" value = "" placeholder="abc@gmail.com"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Phone Number:
+                     </td>
+                    <td>
+                         <input type = "phone" id = "phone" name = "phone" value = "" placeholder="017********"/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Password:
+                    </td> 
+                    <td>
+                         <input type = "password" id = "password" name = "" value = ""/>
+                    </td> 
+                </tr>
+
+                <tr>
+                    <td>
+                        Confirm Password:
+                    </td>
+                    <td> 
+                        <input type = "password" name = "cpassword" value = ""/>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                    <input type = "text" name = "name" placeceholder = "Name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Gender: 
+                    </td>
+                    <td> 
+                        <input type = "radio" name = "gender" value = "male"/> Male
+                    </td>
+                    <td> 
+                        <input type = "radio" name = "gender" value = "female"/> Female
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <input type = "submit" name ="" value = "REGISTER">
+            <a href = "login.html"> SIGNIN</a>
+
+            </fieldset>  
+        </form>
+
+        
+
+    </body>
+</html>
